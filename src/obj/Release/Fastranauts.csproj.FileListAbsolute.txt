@@ -1,0 +1,7 @@
+c:\Users\Admin\Desktop\Ost Mod\Fastranauts\src\obj\Release\Fastranauts.csproj.AssemblyReference.cache
+c:\Users\Admin\Desktop\Ost Mod\Fastranauts\src\obj\Release\Fastranauts.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Admin\Desktop\Ost Mod\Fastranauts\src\obj\Release\Fastranauts.csproj.CoreCompileInputs.cache
+c:\Users\Admin\Desktop\Ost Mod\Fastranauts\src\bin\Release\Fastranauts.dll
+c:\Users\Admin\Desktop\Ost Mod\Fastranauts\src\bin\Release\Fastranauts.pdb
+c:\Users\Admin\Desktop\Ost Mod\Fastranauts\src\obj\Release\Fastranauts.dll
+c:\Users\Admin\Desktop\Ost Mod\Fastranauts\src\obj\Release\Fastranauts.pdb

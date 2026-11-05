@@ -1,0 +1,11 @@
+[
+    {
+        "strName": "Fastranauts Performance Optimizer",
+        "strAuthor": "Fastranauts Team",
+        "strModURL": "",
+        "strGameVersion": "1.0.0.9",
+        "strModVersion": "1.1.0",
+        "strNotes": "[h1]Fastranauts Performance Optimizer[/h1]\n\nA non-breaking BepInEx performance and memory optimization mod for Ostranauts (v1.0.0.9+).\n\n[h2]Key Optimizations[/h2]\n[list]\n[*][b]PDA Status Overlays (P0):[/b] Eliminates the 24ms / 211KB periodic frame spike every 0.5s (and 30ms spike when paused at 16x speed) when PDA overlays are active.\n[*][b]Pause & TimeScale (16x) Fix (P0):[/b] Fixes Unity Time.timeScale running PDAVisualisers, UI timers, and FixedUpdate 16x faster while paused, caches GUIOutput sprites, and fixes Rotor.Animate double Time.timeScale scaling.\n[*][b]Update Decoupling & Sim Tick System (P0):[/b] Caps CrewSim.Update sub-stepping at high speeds, skips idle tickers in CrewSim.UpdateICOs without allocations, limits CondOwner visual/stat refreshes to once per rendered frame, and decouples epoch-based simulation Updates at 2x-16x speed.\n[*][b]CrewSim & Raycast NonAlloc (P0):[/b] Replaces per-frame Physics.RaycastAll and LINQ OrderBy/ToArray allocations with zero-allocation Physics.RaycastNonAlloc buffers and fixes the CondOwner.Cleanup memory leak.\n[*][b]Door Sensors & Atmosphere (P0):[/b] Eliminates per-tick List<CondOwner>, CondTrigger clone, and Condition object allocations in GasPressureSense, GasPump, and GasContainer.AddGasMols.\n[*][b]2D Lighting & Visibility (P0):[/b] Eliminates per-frame List<T>, Segment, and Mesh.ToArray() allocations in Visibility light and LOS calculations.\n[*][b]UI & Ground Inventory (P0):[/b] Throttles redundant per-frame 25-tile Ground inventory LOS scans while keeping drag-and-drop redraws instantaneous.\n[*][b]Pathfinding & AI Radar (P1):[/b] Reuses JumpPointSearch 2D walkable grids, eliminates Vector2Int struct boxing in JPS/PathMemory, and rate-limits AI radar tracking scans.\n[/list]\n\n[h2]Mod Compatibility & Diagnostics[/h2]\nBuilt using non-destructive Harmony Transpilers and isolated modules so it never conflicts with other mods (including Take Their Ships and JSON content mods). Press [code]F8[/code] or type [code]fastinfo[/code] in the console to view live telemetry.",
+        "strWorkshopID": ""
+    }
+]
